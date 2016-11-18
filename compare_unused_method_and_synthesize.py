@@ -16,7 +16,7 @@ msg['Subject'] = subject
 msg.attach(MIMEText(body, 'plain'))
 text=msg.as_string()
 
-s = smtplib.SMTP('microsolf_exchange_domain', 587)
+s = smtplib.SMTP('microsoft_exchange_domain', 587)
 s.starttls()
 s.login('USERNAME','PASSWORD')
 s.sendmail(sender,address_book, text)
